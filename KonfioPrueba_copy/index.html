@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="node_modules/c3/c3.css" rel="stylesheet">
+	
+	<title>MXN</title>
+</head>
+<body>
+	<div class="container">
+
+		<!-- Menu Options -->
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a class="granularity nav-link active" data-value="Historic" data-toggle="pill">Historic</a>
+					</li>
+					<li class="nav-item">
+						<a class="granularity nav-link" data-value="Year" data-toggle="pill">Year</a>
+					</li>
+					<li class="nav-item">
+						<a class="granularity nav-link" data-value="Month" data-toggle="pill">Month</a>
+					</li>
+					<li class="nav-item">
+						<a class="granularity nav-link" data-value="Week" data-toggle="pill">Week</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<br>
+
+		<!-- Chart -->
+		<div class="row">
+			<div class="col-md-12">
+				<div id="chart"></div>
+			</div>
+		</div>
+
+		<!-- Error Message -->
+		<h1 class="errorMessage hidden">UPS! Something went wrong</h1>
+	</div>
+	<script src="all-scripts.js"></script>
+</body>
+</html>
